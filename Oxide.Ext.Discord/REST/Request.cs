@@ -94,14 +94,12 @@
                 }
 
                 string message = this.ParseResponse(ex.Response);
-
-                Interface.Oxide.LogWarning($"[Discord Ext] An error occured whilst submitting a request to {req.RequestUri} (code {httpResponse.StatusCode}): {message}");
                 
                 if ((int)httpResponse.StatusCode == 429)
-                {
                     Interface.Oxide.LogWarning($"[Discord Ext] Ratelimit info: remaining: {bucket.Remaining}, limit: {bucket.Limit}, reset: {bucket.Reset}, time now: {Helpers.Time.TimeSinceEpoch()}");
-                }
-
+                else
+                    Interface.Oxide.LogWarning($"[Discord Ext] An error occured whilst submitting a request to {req.RequestUri} (code {httpResponse.StatusCode}): {message}");
+                
                 httpResponse.Close();
 
                 bool shouldRemove = (int)httpResponse.StatusCode != 429;
