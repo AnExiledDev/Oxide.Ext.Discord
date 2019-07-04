@@ -8,4 +8,4 @@ Oxide.Ext.Discord is an Oxide extension which acts as a bridge between Oxide and
 Want to contribute? Create a fork of the repo and create a pull request for any changes you wish to make!
 
 ## Credits
-<bold>PsychoTea</bold> - The original author of this extension
+<b>PsychoTea</b> - The original author of this extension
