@@ -1,5 +1,3 @@
-## About
-
 **Oxide.Ext.Discord** is an Oxide extension which acts as a bridge between Oxide and the Discord API.
 
 Should you encounter a problem or bug with the extension, please feel free to create an issue here. Try to include as much detail as possible, including steps to reproduce the issue. A code example is highly appreciated.
