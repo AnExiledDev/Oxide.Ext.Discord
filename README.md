@@ -520,3 +520,6 @@ void Discord_UnhandledEvent(JObject messageObject)
 ## Contributing
 
 Want to contribute? Create a fork of the repo and create a pull request for any changes you wish to make!
+
+## Credits
+**PsychoTea** - The original author of this extension
